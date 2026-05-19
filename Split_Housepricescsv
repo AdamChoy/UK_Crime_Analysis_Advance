@@ -1,0 +1,26 @@
+import os
+import pandas as pd
+
+print(os.getcwd())
+print(os.listdir())
+
+df = pd.read_csv("house prices unfiltered.csv")
+
+print("CSV loaded")
+print("Rows:", len(df))
+
+
+output_folder = "split_house_prices"
+os.makedirs(output_folder, exist_ok=True)
+
+chunk_size = 5000
+
+for i, start in enumerate(range(0, len(df), chunk_size)):
+    chunk = df.iloc[start:start + chunk_size]
+    output_path = f"{output_folder}/house_prices_part_{i+1}.csv"
+    chunk.to_csv(output_path, index=False)
+    print(f"Saved: {output_path}")
+
+print("Done")
+​
+
