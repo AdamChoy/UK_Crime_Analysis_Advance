@@ -19,7 +19,7 @@ The pipeline follows a Bronze → Silver → Gold architecture to ingest, clean,
 - West Midlands Police
 - Thames Valley Police
 - Surrey Police
-- Dyfed-Powys Police
+- Cumbria Constabulary
 
 ---
 
