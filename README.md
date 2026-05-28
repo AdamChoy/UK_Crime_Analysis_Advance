@@ -47,8 +47,6 @@ Used to provide deprivation indicators and socioeconomic context.
 ---
 
 ## Pipeline Architecture
-
-```text
 Bronze Layer
     ↓
 Silver Layer
